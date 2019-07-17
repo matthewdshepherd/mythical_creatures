@@ -6,10 +6,10 @@ class Unicorn {
     this.color = color;
   }
   isWhite(){
-    return this.color==='white'
+    return this.color==='white';
   }
   says(stuff){
-    return `**;* ${stuff} *;**`
+    return `**;* ${stuff} *;**`;
   }
 };
 

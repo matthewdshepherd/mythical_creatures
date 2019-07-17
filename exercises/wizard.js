@@ -23,7 +23,7 @@ class Wizard {
       break
 
       case false:
-      return 'I SHALL NOT CAST!'
+      return 'I SHALL NOT CAST!';
       break
     }
   }

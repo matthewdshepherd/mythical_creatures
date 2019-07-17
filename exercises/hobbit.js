@@ -6,17 +6,17 @@ class Hobbit{
     this.adult=false;
     this.old = false;
     this.isShort = true;
-    this.hasRing = false || name === 'Frodo'
+    this.hasRing = false || name === 'Frodo';
   }
   celebrateBirthday(){
     this.age++
      switch(this.age){
       case 33:
-      this.adult = true
+      this.adult = true;
       break
 
       case 101:
-      this.old = true
+      this.old = true;
       break
     }
   }
