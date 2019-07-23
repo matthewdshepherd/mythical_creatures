@@ -161,21 +161,19 @@ describe('Sphinx', () => {
   });
 
   it('should scream specifically about the last riddle to be answered', () => {
-    const sphinx = new Sphinx();
-    const riddle1 = {
-      riddle: 'What word becomes shorter when you add two letters to it?', 
-      answer: 'short'
-    };
-    const riddle2 = {
-      riddle: 'How far can a fox run into a grove?',
-      answer: 'Halfway, after that it\'s running out.'
-    };
-
-    sphinx.collectRiddle(riddle1);
-    sphinx.collectRiddle(riddle2);
-    sphinx.attemptAnswer('Halfway, after that it\'s running out.');
-    const rage = sphinx.attemptAnswer('short');
-
-    assert.equal(rage, 'PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"short\"???');
-  });
+   const sphinx = new Sphinx();
+   const riddle1 = {
+     riddle: 'What word becomes shorter when you add two letters to it?',
+     answer: 'short'
+   };
+   const riddle2 = {
+     riddle: 'How far can a fox run into a grove?',
+     answer: 'Halfway, after that it\'s running out.'
+   };
+   sphinx.collectRiddle(riddle1);
+   sphinx.collectRiddle(riddle2);
+   sphinx.attemptAnswer('Halfway, after that it\'s running out.');
+   const rage = sphinx.attemptAnswer('short');
+   assert.equal(rage, 'PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"short\"???');
+ });
 });
