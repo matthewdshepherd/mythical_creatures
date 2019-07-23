@@ -1,0 +1,17 @@
+class Agency {
+  constructor(name, airPort) {
+    this.name = name;
+    this.location = airPort;
+    this.wellRun = false;
+    this.greatService = false;
+    this.customers = [];
+  }
+  screenCustomer(customer) {
+    if (customer.age >= 25) {
+      customer.mood = 'indifferent';
+      this.customers.push(customer);
+    }
+  }
+}
+
+module.exports = Agency;
